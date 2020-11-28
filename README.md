@@ -48,3 +48,5 @@ Three unique Next.js functions you can use to fetch data for pre-rendering
 - getStaticProps: static generation - fetch data at build time
 - getStaticPaths: static generation - specify dynamic routes to pre-render based on data
 - getServerSideProps: server side rendering - fetch data on each request
+
+Use `getStaticProps` to fetch a specific post given an ID and `getStaticPaths` to fetch all possible blog posts.
