@@ -14,3 +14,26 @@ it doesn't refresh
 ## assets
 - Important: To use CSS Modules, the CSS file name must end with .module.css.
 - css modules automatically generates unique class names
+
+## pre-rendering and data fetching
+
+`by default, Next.js pre-renders every page. This means that Next.js generates HTML for each page in advance, instead of having it all done by client-side JavaScript. Pre-rendering can result in better performance and SEO.`
+
+- hydration: a process happening when a page is loaded by the browser, and in this process, its javascript code runs and makes the page fully interactive. 
+    ```
+    Each generated HTML is associated with minimal JavaScript code necessary for that page. When a page is loaded by the browser, its JavaScript code runs and makes the page fully interactive. (This process is called hydration.)
+    ```
+
+- static generation vs server-side rendering   -> Two forms of Next's pre-rendering. 
+  - Static generation: generates the html at build time
+  - Server-sdie rendering: generates the html on each request
+  - Next js lets us choos which pre-rendering method to apply for each page(Per-page basis)
+
+- how to choose which rendering method to use
+  - Next recommend us to use Static generation whenwever possible(to use CDN)
+    - ask yourself 'Can I pre-render this page ahead of a user's request?' If yes, use static generation
+  - If my page shows frequently update data, use server-side rendering which will be slower, cause it has to build html file on every request. or just don't do it, and use client-side javascript to get frequently updated data. 
+
+- Static generation can be done with and without Data
+
+- swr: https://swr.vercel.app/
