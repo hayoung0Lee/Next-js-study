@@ -5,7 +5,6 @@ import remark from 'remark'
 import html from 'remark-html'
 import { removeAllListeners } from 'process'
 
-
 const postsDirectory = path.join(process.cwd(), 'posts')
 
 export function getSortedPostsData() {

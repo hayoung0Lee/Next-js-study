@@ -50,3 +50,7 @@ Three unique Next.js functions you can use to fetch data for pre-rendering
 - getServerSideProps: server side rendering - fetch data on each request
 
 Use `getStaticProps` to fetch a specific post given an ID and `getStaticPaths` to fetch all possible blog posts.
+
+
+## More 
+https://nextjs.org/learn/basics/deploying-nextjs-app/platform-details
