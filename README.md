@@ -37,3 +37,14 @@ it doesn't refresh
 - Static generation can be done with and without Data
 
 - swr: https://swr.vercel.app/
+
+
+
+## data fetching
+https://nextjs.org/docs/basic-features/data-fetching
+
+Three unique Next.js functions you can use to fetch data for pre-rendering
+
+- getStaticProps: static generation - fetch data at build time
+- getStaticPaths: static generation - specify dynamic routes to pre-render based on data
+- getServerSideProps: server side rendering - fetch data on each request
